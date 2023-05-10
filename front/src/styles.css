@@ -1,0 +1,97 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(-225deg, #11C231 0%, #11C292 52%, #11A4C2 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.map-container{
+    width: 60%;
+    height: 500px;
+    border-radius: 1rem;
+    border: solid 10px white;
+    box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.marker{
+    width: 50px;
+    height: 50px;
+    /* TODO: Imagen Marcador */
+    background-image: url("./assets/images/carro-deportivo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-inputs{
+    background-color: white;
+    width: 58%;
+    border-radius: .5rem;
+    border: solid 2px #00000008;
+    padding: 1rem;
+    box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.35),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.mock-input{
+    background-color: white;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    box-shadow: 0 0 10px #0000001a;
+    color: #808080;
+    min-height: 18px;
+}
+
+.mock-label{
+    padding: .25rem;
+    font-weight: 600;
+}
+
+.geocoder, .mapboxgl-ctrl{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    background-color: white;
+}
+
+.active-way{
+    border: solid 2px #09c509;
+    box-shadow: 0 0 10px #09c5094a;
+}
+
+.btn-route{
+    background-color: white;
+    color: black;
+    padding: .5rem 1rem;
+    border: solid 2px #ccc;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.wrapper {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    height: 70px;
+    background-color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 17px;
+}

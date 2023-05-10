@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <button (click)="drawRoute()" class="btn-route 'btn', 'btn-info'">Dibujar Ruta</button>
+</div>
+
+<div class="wrapper">
+  <div class="box-inputs">
+    <div>
+      <div id="geocoder" #asGeoCoder class="geocoder"></div>
+    </div>
+
+    <div (click)="changeMode('start')" [ngClass]="{'active-way':modeInput === 'start'}">
+      <div class="mock-label">Inicial</div>
+      <div class="mock-input">{{wayPoints?.start?.place_name}}</div>
+    </div>
+
+    <div (click)="changeMode('end')" [ngClass]="{'active-way':modeInput === 'end'}">
+      <div class="mock-label">Final</div>
+      <div class="mock-input">{{wayPoints?.end?.place_name}}</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="wrapper">
+  <div id="map" #asMap class="map-container"></div>
+</div>
+
+<footer class="footer">
+  <p>Todos los derechos reservados &copy; <a href="https://www.linkedin.com/in/ricardo-velez-calderon-b0861522a">ROADZYS CORPORATION</a></p>
+</footer>
