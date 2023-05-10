@@ -1,5 +1,7 @@
-# Ejecutar en desarollo
+# Descripción
+Este código es el backend de la aplicación.
 
+# Ejecutar en desarollo
 1. Clonar repositorio
 2. Ejecutar
 ```
