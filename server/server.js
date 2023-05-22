@@ -3,13 +3,13 @@ const cors = require('cors');
 const app = express();
 const server = require('http').Server(app);
 
-app.use(cors());
+const PORT = require('./config.js');
 
-const PORT = 3000;
+app.use(cors());
 
 const io = require('socket.io')(server, {
     cors: {
-        origin: ['http://localhost:4200']
+        origin: ['https://nimble-axolotl-ddafb5.netlify.app']
     }
 });
 
